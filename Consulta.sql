@@ -16,10 +16,3 @@ CREATE TABLE usuarios (
 	notas TEXT NOT NULL
 );
 
--- insertar registro en la tabla usuarios
-INSERT INTO usuarios (nombre, telefono, correo, PASSWORD, rfc, notas) VALUES
-	('Test', '1234567890', 'mail@mail.com', MD5('123A'), 'CAGL881116QM3', 'Nota1');
-	
-SELECT * FROM usuarios; 
-
-SELECT * FROM usuarios WHERE correo = 'usuario@mail.com' AND password = MD5('123')
